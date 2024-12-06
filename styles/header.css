@@ -1,4 +1,3 @@
-
 .cabecalho__menu-hambuerguer {
     width: 24px;
     height: 24px;
@@ -35,6 +34,7 @@
 .container__botao:checked~.lista-menu {
     display: block;
 }
+
 .container__botao:checked~.swiper-pagination {
     display: none;
 }
