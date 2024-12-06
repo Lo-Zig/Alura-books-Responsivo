@@ -1,0 +1,28 @@
+.contato{
+    background-color: white;
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contato__titulo, .contato__texto{
+    color: #002F52;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.contato__texto{
+    font-weight: 400;
+    
+}
+.contato__email{
+    background-color: transparent;
+    border: 1px solid #002F52;
+    color: #002F52;
+    border-radius: 20px;
+    padding: 1em;
+    width: 90%;
+}
+.contato__email::placeholder{
+    background: url(../img/Email.svg);
+    background-repeat: no-repeat;
+    padding-left: 2em;
+}
