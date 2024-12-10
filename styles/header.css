@@ -23,7 +23,9 @@
 .container__imagem {
     padding: 1em;
 }
-
+.container__titulo{
+    display: none;
+}
 .lista-menu {
     display: none;
     position: absolute;
@@ -56,7 +58,101 @@
     text-transform: uppercase;
 
 }
+a.lista-menu__item:hover{
+    background-color: #002f52;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
 
 .container__botao {
     display: none;
+}
+.opcoes{
+    display: none;
+}
+.container__texto{
+    display: none;
+}
+.container__botao:checked~ .container__rotulo > .cabecalho__menu-hambuerguer{
+    background-image: url("../img/Menu\ Aberto.svg"); 
+}
+.container__botao:checked~.container__rotulo{
+    background-color: #002f52;
+}
+
+
+@media screen and (min-width: 1024px){
+    .container__titulo, .container__titulo-negrito{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        display: inline;
+    }
+
+    .container__titulo{
+        font-weight: 400;
+    }
+    .container__titulo-negrito{
+        font-weight: 790;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+    .opcoes__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        transition: 200ms;
+    }
+    .opcoes__item:hover{
+        color: var(--laranja);
+        transform: scale(1.1);
+        transition: 200ms;
+    }
+    .opcoes__link{
+        text-decoration: none;
+        color: black;
+    }
+    .opcoes__link:hover{
+        color: var(--laranja);
+        transform: scale(1.1);
+        transition: 200ms;
+    }
+    .container__imagem-transparente{
+        display: none;
+    }
+    .cabecalho__menu-hambuerguer{
+        display: none;
+    }
+    .opcoes__botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+    .opcoes__botao{
+        display: none;
+    }
+}
+@media screen and (min-width: 1728px){
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #002f52;
+    }
+    .container__texto{
+        display: block;
+        transition: 200ms;
+    }
+    .container__texto:hover{
+        transform: scale(1.05);
+        transition: 200ms;
+        color: var(--laranja);
+    }
+    .cabecalho{
+        padding: 0 2em;
+    }
+    .opcoes{
+        margin-right: auto;
+    }
 }
